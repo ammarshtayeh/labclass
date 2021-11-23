@@ -1,0 +1,134 @@
+#include <iostream>
+using namespace std;
+
+
+
+class books
+{
+public:
+	void print() {
+		cout << getid();
+		cout << getname();
+		cout << getprice();
+
+
+	}
+	books(int id, string name, float price)
+	{
+		this->id= id;
+		this->name = name;
+		this->price= price;
+
+
+	}
+	void setid(int i)
+	{
+		id = i;
+
+	}
+	void setname(string n)
+	{
+		name = n;
+
+	}
+	void setprice(float p)
+	{
+		price = p;
+		
+	}
+books(){
+	id = -1;
+	name = " ";
+	price = 0;
+
+
+
+
+	}
+
+int getid()
+{
+	return id;
+
+}
+string getname()
+{
+	return name;
+	
+}
+float getprice()
+{
+	return price;
+
+}
+private:
+	int id;
+	string name;
+	float price;
+
+};
+
+class Bookstore {
+public:
+	Bookstore(int id, string name, string category,int size)
+	{
+		this->id = id;
+		this->name = name;
+		this->category = category;
+		this->size = size;
+
+	}
+	void setcat(string c)
+	{
+		category = c;
+
+	}
+	void setsize(int s)
+	{
+		size = s;
+
+	}
+	void setid(int ii)  
+	{
+		id = ii;
+		
+
+	}
+	void setname(string nn)
+	{
+		name = nn;
+
+	}
+	Bookstore()
+	{
+		size = 10;
+		books* book;
+		book = new books[size];
+
+	}
+
+
+
+private:
+
+
+	int id;
+	string name;
+	string category;
+	int size;
+
+
+};
+
+int main()
+{
+
+
+
+
+
+
+
+
+
+}
